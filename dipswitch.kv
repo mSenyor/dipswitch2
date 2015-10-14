@@ -1,0 +1,63 @@
+### A
+<MainView>:
+	orientation: 'vertical'
+	
+	DecimalView:
+		id: dec_view
+
+	BinaryView:
+		id: bin_view
+
+### ### B
+<DecimalView>:
+	# C1
+	Button:
+		id: all_up
+		size_hint_x: None
+		size_hint_y: None
+		width: 70
+		height: 300
+		text: '<'
+		font_size: 60
+		on_press: pass
+
+	# C2
+	MidPanel:
+		id: mid_panel
+		size_hint_y: None
+		height: 300
+
+	# C3
+	Button:
+		id: all_down
+		size_hint_x: None
+		size_hint_y: None
+		width: 70
+		height: 300
+		text: '>'
+		font_size: 60
+		on_press: pass
+
+### ### ### C
+# C2
+<MidPanel>:
+	orientation: 'vertical'
+	UpButtons:
+		id: up_buttons
+		size_hint_y: None
+		height: 70
+	
+	Label:
+		id: label
+		text: 'blah'
+		font_size: 180
+	
+	DownButtons:
+		id: down_buttons
+		size_hint_y: None
+		height: 70
+
+### ### B
+# B2
+<BinaryView>:
+

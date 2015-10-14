@@ -158,46 +158,91 @@ def togg_str_bnr(index):
     digit=zero_one(digit)
     str_bnr=before+digit+after
 
+### A
+# A1 the object containing the main view of the program
+class MainView(BoxLayout):
+    pass
+
+### ### B
+# B1 top area of the main view. used to deal with decimal address aspects
+class DecimalView(BoxLayout):
+    pass
+
+### ### ### C
+# C1 kivy button object in dipswitch.kv
+
+# C2 middle area of the DecimalView object. used to display varioud buttons and decimal address text
+class MidPanel(BoxLayout):
+    pass
+
+### ### ### ### D
+# D1 top area of the MidPanel object. contains a few buttons in dipswitch.kv
+class UpButtons(BoxLayout):
+    pass
+
+# D2 center area of the MidPanel object. contains a kivy label object in dipswitch.kv
+
+# D3 bottom area of the MidPanel object. contains a few buttons in dipswitch.kv
+class DownButtons(BoxLayout):
+    pass
+
+### ### ### C
+# C3 kivy button object in dipswitch.kv
+
+### ### B
+# B2 bottom area of the main view. used to deal with binary address.
+class BinaryView(BoxLayout):
+    pass
 
 
 
-print "dec_add(1)"
-dec_add(1)
+####### main #######
+class DipSwitch(App):
+    pass
 
-stat()
-print "all_dec()"
-all_dec()
-stat()
-print "bin_address=bin(2)"
-bin_address=bin(2)
-stat()
-print "all_bin()"
-all_bin()
-stat()
-print "str_dec=str_int(3)"
-str_dec=str_int(3)
-stat()
-print "all_str_dec()"
-all_str_dec()
-stat()
+if __name__ == "__main__":
+    DipSwitch().run()
 
-print "togg_str_bnr(1)"
-togg_str_bnr(1)
-stat()
-print "togg_str_bnr(2)"
-togg_str_bnr(2)
-stat()
-print "togg_str_bnr(3)"
-togg_str_bnr(3)
-stat()
-
-print "all_str_bnr()"
-all_str_bnr()
-stat()
-
-
-
-
-
-
+#print "dec_add(1)"
+#dec_add(1)
+#
+#stat()
+#print "all_dec()"
+#all_dec()
+#stat()
+#print "bin_address=bin(2)"
+#bin_address=bin(2)
+#stat()
+#print "all_bin()"
+#all_bin()
+#stat()
+#print "str_dec=str_int(3)"
+#str_dec=str_int(3)
+#stat()
+#print "all_str_dec()"
+#all_str_dec()
+#stat()
+#
+#print "togg_str_bnr(1)"
+#togg_str_bnr(1)
+#stat()
+#print "togg_str_bnr(2)"
+#togg_str_bnr(2)
+#stat()
+#print "togg_str_bnr(3)"
+#togg_str_bnr(3)
+#stat()
+#
+#print "all_str_bnr()"
+#all_str_bnr()
+#stat()
+#
+#print "str_bnr_add(1)"
+#str_bnr_add(1)
+#stat()
+#
+#print "all_str_bnr()"
+#all_str_bnr()
+#stat()
+#
 print "\n\n\n\n\n\n\nALL DONE!"
