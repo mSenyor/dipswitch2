@@ -1,5 +1,7 @@
 ### A
+# A1
 <MainView>:
+	id: main_view
 	orientation: 'vertical'
 	
 	DecimalView:
@@ -7,8 +9,11 @@
 
 	BinaryView:
 		id: bin_view
+		size_hint_y: None
+		height: root.height - 300
 
 ### ### B
+# B1
 <DecimalView>:
 	# C1
 	Button:
@@ -42,22 +47,172 @@
 # C2
 <MidPanel>:
 	orientation: 'vertical'
+	# D1
 	UpButtons:
 		id: up_buttons
 		size_hint_y: None
 		height: 70
 	
+	# D2
 	Label:
 		id: label
-		text: 'blah'
+		text: app.out_str_dec()
 		font_size: 180
 	
+	# D3
 	DownButtons:
 		id: down_buttons
 		size_hint_y: None
 		height: 70
 
+### ### ### ### D
+# D1
+<UpButtons>:
+	Button:
+		id: hund_up
+		text: '^'
+		font_size: 60
+		on_press: pass
+
+	Button:
+		id: ten_up
+		text: '^'
+		font_size: 60
+		on_press: pass
+		
+	Button:
+		id: one_up
+		text: '^'
+		font_size: 60
+		on_press: pass
+# D3
+<DownButtons>:
+	Button:
+		id: hund_down
+		text: 'v'
+		font_size: 60
+		on_press: pass
+
+	Button:
+		id: ten_down
+		text: 'v'
+		font_size: 60
+		on_press: pass
+		
+	Button:
+		id: one_down
+		text: 'v'
+		font_size: 60
+		on_press: pass
+
+	
+	
 ### ### B
 # B2
 <BinaryView>:
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '256'
+		Switch:
+			id: s256
+			on_active: pass
+		Label:
+			font_size:30
+			text: '9'
+
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '128'
+		Switch:
+			id: s128
+			on_active: pass
+		Label:
+			font_size:30
+			text: '8'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '64'
+		Switch:
+			id: s64
+			on_active: pass
+		Label:
+			font_size:30
+			text: '7'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '32'
+		Switch:
+			id: s32
+			on_active: pass
+		Label:
+			font_size:30
+			text: '6'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '16'
+		Switch:
+			id: s16
+			on_active: pass
+		Label:
+			font_size:30
+			text: '5'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '8'
+		Switch:
+			id: s8
+			on_active: pass
+		Label:
+			font_size:30
+			text: '4'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '4'
+		Switch:
+			id: s4
+			on_active: pass
+		Label:
+			font_size:30
+			text: '3'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '2'
+		Switch:
+			id: s2
+			on_active: pass
+		Label:
+			font_size:30
+			text: '2'
+	SingleSwitch:
+		Label:
+			font_size: 30
+			text: '1'
+		Switch:
+			id: s1
+			on_active: pass
+		Label:
+			font_size:30
+			text: '1'
+			text: '9'
+
+
+
+
+
+
+
+
+
+
+
+
+		
 

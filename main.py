@@ -194,11 +194,25 @@ class DownButtons(BoxLayout):
 class BinaryView(BoxLayout):
     pass
 
+### ### ### C
+# C4
+class SingleSwitch(BoxLayout):
+    pass
+
 
 
 ####### main #######
 class DipSwitch(App):
-    pass
+    def build(self):
+        return MainView()
+
+    def out_str_dec(self):
+        if str_dec == '000':
+            return '512'
+        elif dec_address < 512 and dec_address > 0:
+            return str_dec
+        else:
+            return 'error'
 
 if __name__ == "__main__":
     DipSwitch().run()
